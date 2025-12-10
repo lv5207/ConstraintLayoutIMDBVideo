@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#141313"
     tools:context=".MainActivity">
 
     <TextView
@@ -13,6 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:text="stuff ll"
+        android:textColor="#F6EAEA"
         app:layout_constraintEnd_toEndOf="@+id/imageview_status2"
         app:layout_constraintStart_toStartOf="@+id/imageview_status2"
         app:layout_constraintTop_toBottomOf="@+id/imageview_status2" />
@@ -47,28 +49,6 @@
         app:layout_constraintTop_toTopOf="@+id/imageview_status1"
         app:srcCompat="@android:drawable/ic_notification_overlay" />
 
-    <TextView
-        android:id="@+id/textview_movieName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:text="Hello World!"
-        android:textSize="22sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline1"
-        app:layout_constraintTop_toBottomOf="@+id/imageview_moviePoster" />
-
-    <TextView
-        android:id="@+id/textview_movieTagline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="4dp"
-        android:text="jfjfjhfgbnfk"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="@+id/textview_movieName"
-        app:layout_constraintTop_toBottomOf="@+id/textview_movieName" />
-
     <ImageView
         android:id="@+id/imageview_moviePoster"
         android:layout_width="516dp"
@@ -78,16 +58,16 @@
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+        tools:srcCompat="@drawable/vmgicxw6biqlqdh77htpbfdab0u_scaled" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="124dp"
+        android:layout_height="221dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageview_moviePoster"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
         app:layout_constraintTop_toBottomOf="@+id/imageview_moviePoster"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@drawable/weaponsthmb" />
 
     <ImageView
         android:id="@+id/imageview_status1"
@@ -107,6 +87,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:text="fff"
+        android:textColor="#F6EAEA"
         app:layout_constraintEnd_toEndOf="@+id/imageview_status1"
         app:layout_constraintStart_toStartOf="@+id/imageview_status1"
         app:layout_constraintTop_toBottomOf="@+id/imageview_status1" />
@@ -117,6 +98,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:text="ytre"
+        android:textColor="#F6EAEA"
         app:layout_constraintEnd_toEndOf="@+id/imageview_status3"
         app:layout_constraintStart_toStartOf="@+id/imageview_status3"
         app:layout_constraintTop_toBottomOf="@+id/imageview_status3" />
@@ -127,6 +109,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:text="a long one"
+        android:textColor="#F6EAEA"
         app:layout_constraintEnd_toEndOf="@+id/imageview_status4"
         app:layout_constraintStart_toStartOf="@+id/imageview_status4"
         app:layout_constraintTop_toBottomOf="@+id/imageview_status4" />
@@ -149,6 +132,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Plot Summary"
+        android:textColor="#F6EAEA"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
         app:layout_constraintTop_toBottomOf="@+id/divider" />
 
@@ -158,6 +143,7 @@
         android:layout_height="48dp"
         android:layout_marginTop="8dp"
         android:text="dsjfsfligupfefiupsiohejdgfjgijlsdfkkjvnvcxnxkdfurijouuorsotohdhhfllkjlkjlkjlkjdsfjkljldsnfdsnfsd"
+        android:textColor="#D1C4C4"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
         app:layout_constraintTop_toBottomOf="@+id/textview_plotSummaryTitle" />
@@ -175,5 +161,55 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_end="16dp" />
+
+    <ImageView
+        android:id="@+id/imageview_starRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toEndOf="@id/barrier2"
+        app:layout_constraintTop_toBottomOf="@+id/imageview_moviePoster"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <TextView
+        android:id="@+id/textView_starRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8.8"
+        android:textColor="#F6EAEA"
+        app:layout_constraintEnd_toEndOf="@+id/imageview_starRating"
+        app:layout_constraintStart_toStartOf="@+id/imageview_starRating"
+        app:layout_constraintTop_toBottomOf="@+id/imageview_starRating" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="right"
+        app:constraint_referenced_ids="textview_movieName,textview_movieTagline" />
+
+    <TextView
+        android:id="@+id/textview_movieName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="Hello World!"
+        android:textColor="#F6EAEA"
+        android:textSize="22sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageview_moviePoster" />
+
+    <TextView
+        android:id="@+id/textview_movieTagline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="jfjfjhfgbnfk fjjfkdlssk"
+        android:textColor="#F6EAEA"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textview_movieName"
+        app:layout_constraintTop_toBottomOf="@+id/textview_movieName" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
